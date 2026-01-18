@@ -1,0 +1,20 @@
+/*Contenedor descendientes*/
+div p{
+    color: green;
+}
+/*Contenedor hijos directos*/
+ol > li{
+    font-weight: bolder;
+}
+/*Contenedor hermano adyacente*/
+h1 + h2{
+    background-color: rgb(33, 103, 146);
+}
+/*Contenedor hermano generales*/
+h2 ~ h3{
+    background-color: lightskyblue;
+}
+
+div P[align="left"]:hover{
+    background-color: gold;
+}
