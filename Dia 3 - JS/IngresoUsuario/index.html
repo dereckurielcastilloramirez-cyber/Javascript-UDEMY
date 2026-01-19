@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Este es un comentario de una sola línea -->
+    <head>
+        <title> Ingresos de usuario </title>
+        <!-- Importamos el archivo CSS para los estilos -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Párrafo que pide al usuario que ingrese su nombre -->
+        <p>Ingresa tu nombre</p>
+
+        <!-- Campo de entrada de texto con ID único -->
+        <input type="text" id="username">
+
+        <!-- Botón que ejecuta la función saludarUsuario -->
+        <button onclick="saludarUsuario()"> enviar </button>
+        
+        
+        <script>
+            /* 
+                Esta función obtiene el valor del input
+                y muestra un saludo personalizado al usuario
+            */
+            function saludarUsuario(){
+                <!-- Variable para almacenar el nombre del usuario -->
+
+                let nombre = document.getElementById("username");
+                alert("Buenas tardes "+ nombre.value)
+            }
+        </script>
+    </body>
+
+</html>
