@@ -10,3 +10,5 @@ alert(miVariable);
 alert(miArray);
 
 alert(miLista[2]);
+
+console.log("Contenido de miVariable:", miVariable);
