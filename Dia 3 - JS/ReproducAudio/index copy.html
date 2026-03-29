@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/audio -->
+    <head>
+        <title> Reproductor Audio </title>
+        <!-- Importamos el archivo CSS para los estilos -->
+        <link rel="stylesheet" href="styles_var.css">
+        <style>
+            audio::-webkit-media-controls-panel {
+                background-color: #911b1b; /* Cambia el color de fondo del panel de controles */
+            }
+        </style>
+    </head>
+    <body>
+        <input type="number" id="tiempo" placeholder="Ingrese el tiempo en segundos">
+        <button onclick="comenzarTiempo()"> Alarma </button>
+        <h1 id="textoAlarma"style="color:red;"> APAGADO </h1>
+
+        <!-- Elemento de audio para reproducir la alarma agregado en html -->
+        <audio controls>
+            <source src="Audios/alarma.mp3" type="audio/mpeg">
+            Sonido no habilitado
+        </audio>
+
+        <script>
+            let elementosSegundos = document.getElementById("tiempo");
+            let elementoTextoAlarma = document.getElementById("textoAlarma");
+            let elementoSonidoAlarma = document.getElementById("audioAlarma");
+
+            function comenzarTiempo() {
+                setTimeout(tiempoCumplido, elementosSegundos.value * 1000); // El temporizador se activa después de 5 segundos (5000 milisegundos)
+            }
+
+            function tiempoCumplido() {
+                elementoTextoAlarma.textContent = "ENCENDIDO";
+                elementoTextoAlarma.style.color = "green";
+                elementoSonidoAlarma.play();
+            }
+        </script>
+    </body>
+
+</html>
+
+

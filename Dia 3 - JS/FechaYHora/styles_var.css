@@ -1,0 +1,12 @@
+button{
+
+    color: white;
+    background-color: rgb(34, 132, 139);
+    width: 75px;
+    height: 25px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(58, 160, 173);
+    font-size: 80px;
+}

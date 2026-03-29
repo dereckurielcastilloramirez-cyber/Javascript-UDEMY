@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/setTimeout -->
+    <head>
+        <title> TEMPORIZADOR </title>
+        <!-- Importamos el archivo CSS para los estilos -->
+        <link rel="stylesheet" href="styles_var.css">
+    </head>
+    <body>
+        <input type="number" id="tiempo" placeholder="Ingrese el tiempo en segundos">
+
+        <button onclick="comenzarTiempo()"> Alarma </button>
+        <h1 id="textoAlarma"style="color:red;"> APAGADO </h1>
+        <script>
+            let elementosSegundos = document.getElementById("tiempo");
+            let elementoTextoAlarma = document.getElementById("textoAlarma");
+            function comenzarTiempo() {
+                setTimeout(tiempoCumplido, elementosSegundos.value * 1000); // El temporizador se activa después de 5 segundos (5000 milisegundos)
+            }
+ 
+            function tiempoCumplido() {
+                elementoTextoAlarma.textContent = "ENCENDIDO";
+                elementoTextoAlarma.style.color = "green";
+            }
+        </script>
+    </body>
+
+</html>
+
+
