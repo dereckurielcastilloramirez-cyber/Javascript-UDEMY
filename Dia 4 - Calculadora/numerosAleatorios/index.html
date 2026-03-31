@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <!--------------------- HEAD HTML ------------------------------->
+        <title> NUMEROS ALEATORIOS</title>
+
+        <!-- Hoja de estilo CSS  -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Hoja de script JavaScript -->
+        <script src="script.js" defer></script>
+    </head>
+    <body> 
+        <!--------------------- BODY HTML ------------------------------->
+        <h1>Numeros Aleatorios</h1>
+        <input type="number" id="numeroMinimo" placeholder="minimo">
+        <input type="number" id="numeroMaximo" placeholder="maximo">
+        
+        <button onclick="numerosAleatorios(Number(document.getElementById('numeroMinimo').value), Number(document.getElementById('numeroMaximo').value))">Generar Numero Aleatorio</button>
+        <p>El numero aleatorio es: <span id="textoAleatorio"> --- </span></p>
+    </body>
+</html>

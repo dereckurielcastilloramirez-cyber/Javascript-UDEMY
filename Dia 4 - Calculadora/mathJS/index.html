@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <!--------------------- HEAD HTML ------------------------------->
+        <title>Calculadora</title>
+
+        <!-- Hoja de estilo CSS  -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Hoja de script JavaScript -->
+        <script src="script.js" defer></script>
+    </head>
+    <body> 
+        <!--------------------- BODY HTML ------------------------------->
+        <h1>Calculadora</h1>
+
+        <h3> -------- Calculadora de Potencia --------</h3>
+        <input type="number" id="basePotencia" placeholder="base">
+        <input type="number" id="exponentePotencia" placeholder="exponente">
+        <p>La potencia es: <span id="resultadoPotencia"></span></p>
+        <button onclick="calcularPotencia()">Calcular Potencia</button>
+
+        <h3> -------- Raiz Cuadrada --------</h3>
+        <input type="number" id="numeroRaiz" placeholder="numero">
+        <p>La raiz cuadrada es: <span id="resultadoRaiz"></span></p>
+        <button onclick="calcularRaizCuadrada()">Calcular Raiz</button>
+
+        <h3> -------- Valor Absoluto --------</h3>
+        <input type="number" id="numeroAbsoluto" placeholder="numero">
+        <p>El valor absoluto es: <span id="resultadoAbsoluto"></span></p>
+        <button onclick="calcularValorAbsoluto(numeroAbsoluto)">Calcular Valor Absoluto</button>
+
+        <h3> -------- Redondear --------</h3>
+        <input type="number" id="numeroRedondeo" placeholder="numero">
+        <p>El redondeo es: <span id="resultadoRedondeo"></span></p>
+        <button onclick="calcularRedondeo()">Redondear</button>
+
+        <h3> -------- Redondear Hacia Arriba --------</h3>
+        <input type="number" id="numeroArriba" placeholder="numero">
+        <p>El redondeo hacia arriba es: <span id="resultadoArriba"></span></p>
+        <button onclick="calcularRedondeoArriba()">Redondear Hacia Arriba</button>
+
+        <h3> -------- Redondear Hacia Abajo --------</h3>
+        <input type="number" id="numeroAbajo" placeholder="numero">
+        <p>El redondeo hacia abajo es: <span id="resultadoAbajo"></span></p>
+        <button onclick="calcularRedondeoAbajo()">Redondear Hacia Abajo</button>
+
+        <h3> -------- Circunferencia --------</h3>
+        <input type="number" id="diametroCircunferencia" placeholder="diametro">
+        <p>La circunferencia es: <span id="resultadoCircunferencia"></span></p>
+        <button onclick="mostrarCircunferencia()">Calcular Circunferencia</button>
+
+    </body>
+</html>

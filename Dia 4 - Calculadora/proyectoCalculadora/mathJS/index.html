@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <!--------------------- HEAD HTML ------------------------------->
+        <title>Calculadora</title>
+
+        <!-- Hoja de estilo CSS  -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Hoja de script JavaScript -->
+        <script src="script.js" defer></script>
+    </head>
+    <body> 
+        <!--------------------- BODY HTML ------------------------------->
+        <h1 align="center">Calculadora</h1>
+
+        <input type="number" id="primerNumero" placeholder="primer número">
+        <input type="number" id="segundoNumero" placeholder="segundo número">
+        <br>
+        <button onclick="calcularSuma()" style="font-size: 50px; padding:15px 44px;" > + </button>
+        <button onclick="calcularResta()" style="font-size: 50px; padding:15px 44px;" > - </button>
+        <button onclick="calcularMultiplicacion()" style="font-size: 50px; padding:15px 42px;" > x </button>
+        <button onclick="calcularDivision()" style="font-size: 50px; padding:15px 44px;" > / </button>
+        <br>
+        <button onclick="calcularPotencia()" style="font-size: 28px; padding:15px 44px;" > POTENCIA </button>
+        <button onclick="calcularRaizCuadrada()" style="font-size: 28px; padding:15px 77px;" > RAIZ  </button>
+        <br>
+        <button onclick="calcularAbsoluto()" style="font-size: 28px; padding:15px 40px;" > ABSOLUTO </button>
+        <button onclick="calcularRandom()" style="font-size: 28px; padding:15px 47px;" > RANDOM </button>
+        <br>
+        <h3> --------------------------------------------------------------------------</h3>
+        <h2>  Resultado: <span id="resultado"> 0 </span> </h2>
+        <h3> --------------------------------------------------------------------------</h3>
+        <br>
+        <button onclick="calcularRound()" style="font-size: 28px; padding:15px 30px;" > ROUND </button>
+        <button onclick="calcularFloor()" style="font-size: 28px; padding:15px 30px;" > FLOOR </button>
+        <button onclick="calcularCeil()" style="font-size: 28px; padding:15px  30px;" > CEIL </button>
+        <br>
+        <button onclick="limpiar()" style="font-size: 28px; padding:15px 175px; background-color: #a03131;" > LIMPIAR </button>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <!--------------------- HEAD HTML ------------------------------->
+        <title>Funciones</title>
+        <!-- Hoja de estilo CSS  -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+         <!--------------------- BODY HTML ------------------------------->
+         <h1> Sumador</h1>
+        <input type="number" id="numero1">        
+        <input type="number" id="numero2"">        
+        <button onclick="sumar(Number(n1.value), Number(n2.value))">Calcular</button>
+        
+        <!--------------------- JAVASCRIPT ------------------------------->
+        <script>
+            var n1 = document.getElementById("numero1");
+            var n2 = document.getElementById("numero2");
+            
+            function sumar(a, b) {
+                let resultado = a + b;
+                return mostrarResultado(a, b, resultado);
+            }
+            function mostrarResultado(a, b, resultado) {
+                alert("La suma de " + a + " y " + b + " es: " + resultado);
+            }
+
+
+        </script>
+        
+    </body>
+</html>
+    
