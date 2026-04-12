@@ -1,0 +1,212 @@
+:root {
+    --fondo-1: #081221;
+    --fondo-2: #12355b;
+    --panel: rgba(10, 22, 38, 0.82);
+    --panel-borde: rgba(255, 255, 255, 0.14);
+    --texto: #f4f7fb;
+    --texto-suave: #c2cede;
+    --acento: #8ecae6;
+    --sombra: 0 24px 60px rgba(0, 0, 0, 0.35);
+    --drama: linear-gradient(135deg, #5d2e8c, #7f4bc8);
+    --comedia: linear-gradient(135deg, #d19a18, #f2c94c);
+    --accion: linear-gradient(135deg, #b33939, #e55039);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 32px 18px;
+    display: grid;
+    place-items: center;
+    color: var(--texto);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+    background:
+        radial-gradient(circle at top, rgba(142, 202, 230, 0.2), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(255, 183, 3, 0.14), transparent 25%),
+        linear-gradient(145deg, var(--fondo-1), var(--fondo-2));
+}
+
+.contenedor {
+    width: min(100%, 760px);
+}
+
+.tarjeta {
+    padding: 32px;
+    border: 1px solid var(--panel-borde);
+    border-radius: 28px;
+    background: var(--panel);
+    box-shadow: var(--sombra);
+    backdrop-filter: blur(10px);
+    animation: aparecer 0.75s ease;
+}
+
+.subtitulo {
+    margin: 0 0 10px;
+    color: var(--acento);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.descripcion {
+    margin: 18px 0 0;
+    max-width: 56ch;
+    color: var(--texto-suave);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.campo {
+    margin-top: 28px;
+}
+
+label,
+.campo-titulo,
+.resultado-etiqueta {
+    display: block;
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    color: #dfe8f3;
+}
+
+input {
+    width: min(100%, 240px);
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    outline: none;
+    color: var(--texto);
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder {
+    color: rgba(244, 247, 251, 0.55);
+}
+
+input:focus {
+    border-color: rgba(142, 202, 230, 0.8);
+    box-shadow: 0 0 0 4px rgba(142, 202, 230, 0.16);
+    transform: translateY(-1px);
+}
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.boton-genero {
+    border: none;
+    border-radius: 999px;
+    padding: 12px 18px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.boton-genero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.28);
+    filter: brightness(1.05);
+}
+
+.boton-genero:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.32);
+    outline-offset: 3px;
+}
+
+.boton-genero:active {
+    transform: translateY(0);
+}
+
+.drama {
+    background: var(--drama);
+}
+
+.comedia {
+    background: var(--comedia);
+}
+
+.accion {
+    background: var(--accion);
+}
+
+.resultado {
+    margin-top: 32px;
+    padding: 22px;
+    border: 1px solid rgba(142, 202, 230, 0.14);
+    border-radius: 22px;
+    background:
+        linear-gradient(135deg, rgba(142, 202, 230, 0.12), rgba(255, 255, 255, 0.04)),
+        rgba(255, 255, 255, 0.03);
+}
+
+.resultado-etiqueta {
+    margin-bottom: 8px;
+    color: var(--acento);
+}
+
+h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 18px 14px;
+    }
+
+    .tarjeta {
+        padding: 24px 18px;
+        border-radius: 22px;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+
+    .boton-genero,
+    input {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}

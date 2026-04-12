@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleta de calificaciones</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Boleta de calificaciones</h1>
+        <p>Haz clic en un boton para ver la informacion del estudiante.</p>
+
+        <div class="botones">
+            <button onclick="mostrarLista()">Lista de calificaciones</button><br>
+            <button onclick="calcularPromedio()">Sacar promedio</button><br>
+            <button onclick="notaMasAlta()">Nota mas alta</button><br>
+            <button onclick="mostrarAplazos()">Verificar aplazo</button> <br>
+        </div>
+        <div class="resultados">   
+            <h3>Consulta:</h3>
+            <ul id="listaCalf"></ul>
+            <p id="resultado"></p>
+
+        </div>
+        
+    </main>
+</body>
+</html>

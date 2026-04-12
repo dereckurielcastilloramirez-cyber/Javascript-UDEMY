@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> L A B E L</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+
+
+        <label for="idTienda"> Tienda ID:  </label> 
+        <input type="text" id="idTienda" placeholder="ID de la tienda" min="0" max="6">
+        <button onclick="buscarTienda()"> Buscar tienda</button>
+        <p id="resultadoBusqueda">         </p>
+        <br>
+
+        <button onclick="eliminarUltimaTienda()"> Eliminar última tienda</button>
+        <button onclick="eliminarPrimerTienda()"> Eliminar primera tienda</button>
+        <button onclick="eliminarTiendaEnMedio()"> Eliminar tienda en medio</button>
+        <br>
+        <p id="tiendaEliminada"></p>
+        <br>
+
+        <input type="text" id="nuevaTienda" placeholder="Nombre de la tienda">
+        <br>
+        <button onclick="agregarTiendaComienzo()"> Agregar tienda al comienzo</button>
+        <button onclick="agregarTiendaFinal()"> Agregar tienda al final</button>
+        <br>
+        <p id="tiendaAgregada"></p>
+        <br>
+
+        <p id="numeroTiendas"></p><button onclick="tiendas()"> Mostrar número de tiendas</button>
+        <p id="busca"></p>
+
+
+
+        <p> 
+            <label for="ventaTienda1"> Tienda 1</label>
+            <input type="number" id="ventaTienda1" min="0">
+        </p>
+
+        <p> 
+            <label for="ventaTienda2"> Tienda 2</label>
+            <input type="number" id="ventaTienda2" min="0">
+        </p>
+
+        <p> 
+            <label for="ventaTienda3"> Tienda 3</label>
+            <input type="number" id="ventaTienda3" min="0">
+        </p>
+
+        <p> 
+            <label for="ventaTienda4"> Tienda 4</label>
+            <input type="number" id="ventaTienda4" min="0">
+        </p>
+        
+        <p> 
+            <label for="ventaTienda5"> Tienda 5</label>
+            <input type="number" id="ventaTienda5" min="0">
+        </p>
+
+        <p> 
+            <label for="ventaTienda6"> Tienda 6</label>
+            <input type="number" id="ventaTienda6" min="0">
+        </p>
+
+        <p id="parrafoSalida">         </p>
+        
+
+        <p>
+            <button onclick="calcular()"> Calcular</button>
+        </p>
+
+        <button onclick="imprimirTiendas()"> Imprimir tiendas</button>
+
+
+    </main>
+</body>
+</html>
