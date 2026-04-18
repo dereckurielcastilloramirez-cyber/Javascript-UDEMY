@@ -1,0 +1,13 @@
+{
+    "nombre": "UPIITA",
+    "calle": "Av. Instituto Politecnico Nacional",
+    "ciudad": "CDMX",
+    "cantEstudiantes": 50000,
+    "carreras": {
+        "carrera1": "Ing. Bionica",
+        "carrera2": "Ing. Mecatronica",
+        "carrera3": "Ing. en Sistemas Automotrices",
+        "carrera4": "Ing. Telematica",
+        "carrera5": "Ing. Energia"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "nombre": "Dereck Uriel",
+    "apellido": "Castillo Ramirez",
+    "edad": 23,
+    "genero": "Hombre",
+    "Carrera": "Ingenieria en Sistemas Automotrices",
+    "Trabajo": {
+        "Area": "TI",
+        "Puesto": "Desarrollador Junior"
+    }
+}

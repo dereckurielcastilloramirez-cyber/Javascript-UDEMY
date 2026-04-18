@@ -1,0 +1,96 @@
+button{
+    background-color: rgb(11, 138, 11);
+    width: 200px;
+    height: 90px;
+    font-size: large;
+}
+
+.textoCentrado{
+    text-align: center;
+    font-size: x-large;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-style: oblique;
+    color: rgb(18, 117, 156);
+}
+
+.metodosHttp{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+.metodosHttp h2{
+    text-align: center;
+    color: rgb(18, 117, 156);
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.respuestasHttp{
+    max-width: 1000px;
+    margin: 10px auto 40px auto;
+    padding: 0 16px;
+}
+
+.respuestasHttp h2{
+    text-align: center;
+    color: rgb(18, 117, 156);
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.resumenEstados{
+    text-align: center;
+    margin-bottom: 18px;
+    color: rgb(56, 75, 82);
+}
+
+.metodoGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.metodoCard{
+    border: 1px solid rgb(201, 223, 231);
+    border-radius: 10px;
+    padding: 14px;
+    background-color: rgb(244, 251, 255);
+}
+
+.metodoCard h3{
+    margin: 0 0 8px 0;
+    color: rgb(11, 138, 11);
+}
+
+.metodoCard p{
+    margin: 0;
+    line-height: 1.4;
+}
+
+.estadoCodigo{
+    display: inline-block;
+    min-width: 42px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-right: 6px;
+    color: rgb(255, 255, 255);
+}
+
+.estadoCodigo.exito{
+    background-color: rgb(26, 140, 71);
+}
+
+.estadoCodigo.cliente{
+    background-color: rgb(194, 124, 5);
+}
+
+.estadoCodigo.servidor{
+    background-color: rgb(187, 55, 55);
+}

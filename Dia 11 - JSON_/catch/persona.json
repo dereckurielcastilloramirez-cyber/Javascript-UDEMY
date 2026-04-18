@@ -1,0 +1,11 @@
+{
+    "nombre": "Leonel ",
+    "apellido": "Castillo Roberto",
+    "edad": 64,
+    "genero": "Hombre",
+    "Carrera": "Ingenieria en Comunicaciones y Electronica",
+    "Trabajo": {
+        "Area": "Soporte",
+        "Puesto": "Gerente de area"
+    }
+}

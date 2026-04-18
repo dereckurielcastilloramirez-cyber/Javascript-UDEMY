@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> PROMESAS Y PETICIONES </title>
+        <link rel="stylesheet" href="misEstilos.css">
+        <script src="misScripts.js" defer></script>
+    </head>
+
+    <body>
+        <h1> PROMESAS Y PETICIONES </h1>
+        
+        <div class = "textoCentrado">
+            <button onclick="ObtenerDatos()"> Obtener Datos</button>
+            <p id="jsonExtraer"></p>
+        </div>
+
+        <section class="metodosHttp">
+            <h2>Metodos HTTP (resumen breve)</h2>
+
+            <div class="metodoGrid">
+                <article class="metodoCard">
+                    <h3>GET</h3>
+                    <p>Obtiene informacion del servidor. No modifica datos.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3>POST</h3>
+                    <p>Envia infromacion al servidor.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3>PUT</h3>
+                    <p>Actualiza un recurso existente.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3>DELETE</h3>
+                    <p>Elimina un recurso del servidor.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3>PATCH</h3>
+                    <p>Actualiza solo una parte de un recurso.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3>HEAD</h3>
+                    <p>Como GET, pero devuelve solo encabezados (sin cuerpo).</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3>OPTIONS</h3>
+                    <p>Indica que metodos y opciones permite un endpoint.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3>TRACE / CONNECT</h3>
+                    <p>Metodos avanzados y poco usados en aplicaciones web comunes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="respuestasHttp">
+            <h2>Codigos de respuesta HTTP</h2>
+            <p class="resumenEstados">
+                1xx: Informativo | 2xx: Exito | 3xx: Redireccion | 4xx: Error del cliente | 5xx: Error del servidor
+            </p>
+
+            <div class="metodoGrid">
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo exito">200</span> OK</h3>
+                    <p>La solicitud fue exitosa y el servidor respondio correctamente.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo exito">201</span> Created</h3>
+                    <p>Se creo un recurso nuevo en el servidor.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo exito">204</span> No Content</h3>
+                    <p>La solicitud fue exitosa, pero no hay contenido para mostrar.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo cliente">400</span> Bad Request</h3>
+                    <p>La peticion tiene datos invalidos o incompletos.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo cliente">401</span> Unauthorized</h3>
+                    <p>Falta autenticacion o es invalida.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo cliente">403</span> Forbidden</h3>
+                    <p>El servidor entendio la solicitud, pero no autoriza el acceso.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo cliente">404</span> Not Found</h3>
+                    <p>El recurso solicitado no existe en esa ruta.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo servidor">500</span> Internal Server Error</h3>
+                    <p>Ocurrio un error inesperado en el servidor.</p>
+                </article>
+
+                <article class="metodoCard">
+                    <h3><span class="estadoCodigo servidor">503</span> Service Unavailable</h3>
+                    <p>El servicio no esta disponible temporalmente.</p>
+                </article>
+            </div>
+        </section>
+
+    </body>
+</html>

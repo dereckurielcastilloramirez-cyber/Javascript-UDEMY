@@ -21,3 +21,22 @@ let libro1 = new Libro("Stephen King", "Carrie", 524);
 let libro3 = new libro1.constructor("Kip Thorne", "The Sciense of Interstellar", 324);
 
 // Modificar prototipos
+Libro.abrirLibro = function(){
+    alert(this.titulo + " ha sido abierto");
+}
+
+Libro.prototype.abrirLibro2 = function(){
+    alert(this.titulo + " ha sido abierto");
+}
+
+Libro.prototype.edicion = this.edicion;
+
+
+// EN EL CONSTRUCTOR VAN LAS PROPIEDADES O ATRIBUTOS
+function UnObjeto(a){
+    this.a = a;
+}
+
+// EN EL PROTOTIPO VAN LAS FUNCIONES
+UnObjeto.prototype.metodo1 = function(){console.log("Codigo 1");}
+UnObjeto.prototype.metodo2 = function(){console.log("Codigo 2");}
